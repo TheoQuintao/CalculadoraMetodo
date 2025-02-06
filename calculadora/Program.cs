@@ -2,23 +2,16 @@
 
 while(true)
 {
-    return1:
     Console.Clear();
     Console.WriteLine(
         "Qual Operação deseja realizar? \n\n(1) Somar \n(2) Subtração \n(3) Multiplicação \n(4) Divisão \n(5) Sair"
     );
-    if(!int.TryParse(Console.ReadLine(), out int Menu))
-    {
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("Valor invalido!!");
-        Thread.Sleep(1500);
-        Console.ResetColor();
-        goto return1;
-    }
+    string Menu = Console.ReadLine()?.ToLower()??" ";
     
     switch(Menu)
     {
-        case 1:
+        case "1":
+        case "somar":
             Calculos.soma(
                 Facilitador.ValorDecimal(1),
                 Facilitador.ValorDecimal(2)
@@ -26,7 +19,8 @@ while(true)
             Facilitador.Pausa();
         break;
 
-        case 2:
+        case "2":
+        case "subtração":
             Calculos.Subtração(
                 Facilitador.ValorDecimal(1),
                 Facilitador.ValorDecimal(2)
@@ -34,7 +28,8 @@ while(true)
             Facilitador.Pausa();
         break;
 
-        case 3:
+        case "3":
+        case "multiplicação":
             Calculos.Multiplicação(
                 Facilitador.ValorDecimal(1),
                 Facilitador.ValorDecimal(2)
@@ -42,7 +37,8 @@ while(true)
             Facilitador.Pausa();
         break;
 
-        case 4:
+        case "4":
+        case "divisão":
             Calculos.Divizão(
                 Facilitador.ValorDecimal(1),
                 Facilitador.ValorDecimal(2)
@@ -50,7 +46,8 @@ while(true)
             Facilitador.Pausa();
         break;
 
-        case 5:
+        case "5":
+        case "sair":
         return;
 
     }

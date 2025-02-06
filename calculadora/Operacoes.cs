@@ -67,7 +67,7 @@ namespace Operacoes
         )
         {
 
-            for(int i = 0; i<=Tempo; i++)
+            for(int i = 0; i<=Tempo-1; i++)
             {
                 Console.Clear();
                 Console.WriteLine("Loading.");
@@ -79,6 +79,7 @@ namespace Operacoes
                 Console.WriteLine("Loading...");
                 Thread.Sleep(333);
             }
+            Console.Clear();
         }
     }
 
