@@ -36,6 +36,15 @@ namespace Operacoes
             Facilitador.Loading(2);
             Console.WriteLine($"O resultado da divizão de {Valor1} e {Valor2} é {Valor1/Valor2}");
         }
+        public static void Potenciação(
+            Double Valor1,
+            Double Valor2
+        )
+        {
+            Double resultado = Math.Pow(Valor1,Valor2);
+            Facilitador.Loading(2);
+            Console.WriteLine($"O resultado da potenciação de {Valor1} e {Valor2} é {resultado}");
+        }
     }
     public class Facilitador
     {
@@ -45,6 +54,22 @@ namespace Operacoes
             Console.Clear();
             Console.Write($"Escreva o {ordinal}º valor numerico: ");
             if(!decimal.TryParse(Console.ReadLine(), out decimal valor))
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Valor invalido!!");
+                Thread.Sleep(1500);
+                Console.ResetColor();
+                goto return1;
+            }
+
+            return valor;
+        }
+        public static Double ValorDouble(int ordinal)
+        {
+            return1:
+            Console.Clear();
+            Console.Write($"Escreva o {ordinal}º valor numerico: ");
+            if(!Double.TryParse(Console.ReadLine(), out Double valor))
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Valor invalido!!");
@@ -82,5 +107,4 @@ namespace Operacoes
             Console.Clear();
         }
     }
-
 }

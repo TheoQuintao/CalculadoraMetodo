@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alunos\\Documents\\GitTheo\\CalculadoraMetodo\\calculadora\\calculadora.csproj": {}
+    "D:\\GitTheo\\CalculadoraMetodo\\calculadora\\calculadora.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alunos\\Documents\\GitTheo\\CalculadoraMetodo\\calculadora\\calculadora.csproj": {
+    "D:\\GitTheo\\CalculadoraMetodo\\calculadora\\calculadora.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alunos\\Documents\\GitTheo\\CalculadoraMetodo\\calculadora\\calculadora.csproj",
+        "projectUniqueName": "D:\\GitTheo\\CalculadoraMetodo\\calculadora\\calculadora.csproj",
         "projectName": "calculadora",
-        "projectPath": "C:\\Users\\Alunos\\Documents\\GitTheo\\CalculadoraMetodo\\calculadora\\calculadora.csproj",
-        "packagesPath": "C:\\Users\\Alunos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alunos\\Documents\\GitTheo\\CalculadoraMetodo\\calculadora\\obj\\",
+        "projectPath": "D:\\GitTheo\\CalculadoraMetodo\\calculadora\\calculadora.csproj",
+        "packagesPath": "C:\\Users\\theoo\\.nuget\\packages\\",
+        "outputPath": "D:\\GitTheo\\CalculadoraMetodo\\calculadora\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Alunos\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\theoo\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.405/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
